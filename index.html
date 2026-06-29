@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borejko Nikita (Direwait)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="up.css" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<meta property="og:description" content="Backend-разработчик на Java" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span>nikita</span><span class="dot">.</span><span>borejko</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#projects">Проекты</a>
+        <a href="#skills">Навыки</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact" class="nav-cta">Связаться</a>
+        
+        <button id="lang-toggle" class="lang-btn">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">Java Backend Developer</div>
+          <h1>
+            <span class="highlight">Никита Борейко</span><br>
+            Backend-разработчик
+          </h1>
+          <p>
+            Java Backend Developer с глубокими знаниями объектно-ориентированного
+            программирования и паттернов проектирования. Создаю надёжные и масштабируемые
+            серверные приложения, уделяя особое внимание качеству кода и производительности.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Смотреть проекты →</a>
+            <a href="https://t.me/Direwait" class="btn btn-outline" target="_blank">✈ Написать мне</a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-filename">NikitaBorejko.java</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line">
+                <span class="ln">1</span>
+                <span><span class="ann">@SpringBootApplication</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">2</span>
+                <span><span class="kw">public class </span><span class="cls">NikitaBorejko</span><span class="pl">
+                    {</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">3</span>
+                <span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">4</span>
+                <span><span class="ann">@Autowired</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">5</span>
+                <span><span class="kw"> private </span><span class="cls">BackendSkills</span><span class="pl">
+                    skills;</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">6</span>
+                <span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">7</span>
+                <span><span class="ann"> @GetMapping</span><span class="str">("/whoami")</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">8</span>
+                <span><span class="kw"> public </span><span class="cls">Developer</span><span class="fn">
+                    getMe</span><span class="pl">() {</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">9</span>
+                <span><span class="kw"> return </span><span class="cls">Developer</span><span
+                    class="pl">.builder()</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">10</span>
+                <span><span class="pl"> .</span><span class="fn">name</span><span class="pl">(</span><span
+                    class="str">"Nikita Borejko"</span><span class="pl">)</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">11</span>
+                <span><span class="pl"> .</span><span class="fn">role</span><span class="pl">(</span><span
+                    class="str">"Java Backend"</span><span class="pl">)</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">12</span>
+                <span><span class="pl"> .</span><span class="fn">build</span><span class="pl">();</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">13</span>
+                <span><span class="pl"> }</span></span>
+              </div>
+              <div class="code-line">
+                <span class="ln">14</span>
+                <span><span class="pl">}</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-badges fade-in">
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">Kafka</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Redis</span>
+            <span class="tech-badge">Kubernetes</span>
+            <span class="tech-badge">JWT</span>
+            <span class="tech-badge">Gradle</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects fade-in">
+      <div class="container">
+        <div class="section-label">// проекты</div>
+        <h2 class="section-title">Избранные работы</h2>
+        <p class="section-sub">Реальные кейсы, отражающие мой опыт</p>
+
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <div class="project-icon">📦</div>
+            <h3>Микросервисная платформа заказов</h3>
+            <p>Оркестрация сервисов через Kafka, отказоустойчивость и контракты OpenAPI. Горизонтальное масштабирование
+              под нагрузку.</p>
+            <a href="#" class="project-link">Подробнее →</a>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-icon">🗄️</div>
+            <h3>HighLoad аналитика</h3>
+            <p>Оптимизация SQL-запросов, Redis-кеширование, мониторинг через Grafana + Prometheus. Снижение latency на
+              60%.</p>
+            <a href="#" class="project-link">Подробнее →</a>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-icon">🛡️</div>
+            <h3>Auth &amp; Security Gateway</h3>
+            <p>Spring Security, JWT, OAuth2, Liquibase. Разграничение доступа по ролям, аудит действий, rate limiting.
+            </p>
+            <a href="#" class="project-link">Подробнее →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills fade-in">
+      <div class="container skills-flex">
+        <div class="skills-left">
+          <div class="section-label">// навыки</div>
+          <h2 class="section-title">Технологии &amp; Опыт</h2>
+          <p class="section-sub">Стек, который я использую ежедневно</p>
+
+          <div class="skill-item">
+            <div class="skill-name">Java / Spring Framework / Boot / Cloud</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Spring Security / MVC / Data / JPA</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">OOP / Design Patterns / SOLID</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">PostgreSQL / MongoDB / Hibernate / JDBC</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Redis / Kafka / RabbitMQ</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Flyway / Liquibase</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Docker / Kubernetes</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Git / Maven / Gradle</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Grafana / Prometheus / ELK</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">JUnit / Mockito</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Testcontainers / WireMock</div>
+          </div>
+        </div>
+
+        <div class="skills-right fade-in">
+          <div class="section-label" style="margin-top: 0;">// опыт</div>
+          <h2 class="section-title">Карьерный путь</h2>
+          <p class="section-sub">Мой профессиональный рост</p>
+
+          <div class="timeline fade-in">
+            <div class="timeline-item fade-in">
+              <div class="timeline-date">2023 — настоящее время</div>
+              <div class="timeline-role">Java Backend Developer</div>
+              <div class="timeline-company">ООО «ТехСтек»</div>
+              <div class="timeline-desc">Разработка и поддержка микросервисной архитектуры. Интеграции через Kafka,
+                оптимизация запросов, code review.</div>
+            </div>
+
+            <div class="timeline-item fade-in">
+              <div class="timeline-date">2022 — 2023</div>
+              <div class="timeline-role">Junior Java Developer</div>
+              <div class="timeline-company">Freelance / пет-проекты</div>
+              <div class="timeline-desc">Построение REST API на Spring Boot, работа с PostgreSQL и Redis, написание
+                unit/integration тестов.</div>
+            </div>
+
+            <div class="timeline-item fade-in">
+              <div class="timeline-date">2021 — 2022</div>
+              <div class="timeline-role">Стажёр Backend</div>
+              <div class="timeline-company">СберТех (учебная программа)</div>
+              <div class="timeline-desc">Изучение Spring экосистемы, Java Core, паттернов проектирования и принципов
+                SOLID.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about fade-in">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-label">// обо мне</div>
+            <h2 class="section-title">Кто я такой</h2>
+            <p>Backend-разработчик с фокусом на Java и Spring-экосистеме. Пишу код, который легко читать, тестировать и
+              поддерживать. Верю, что хорошая архитектура — это инвестиция, которая окупается в долгосрочной
+              перспективе.</p>
+            <p>Постоянно слежу за развитием экосистемы — изучаю виртуальные потоки в Java 21, GraalVM Native Image и
+              реактивное программирование с Project Reactor.</p>
+            <ul class="value-list">
+              <li>Чистый код и высокое тестовое покрытие</li>
+              <li>Документированные API и понятные контракты</li>
+              <li>Производительность и наблюдаемость системы</li>
+              <li>Командная работа и конструктивный code review</li>
+            </ul>
+          </div>
+
+          <div class="about-stats fade-in">
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Года коммерческого опыта</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Завершённых проектов</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">85%</div>
+              <div class="stat-label">Среднее покрытие тестами</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">Java</div>
+              <div class="stat-label">Основной язык</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="section-label" style="text-align: center;">// контакты</div>
+          <h2 class="section-title" style="text-align: center;">Готов к сотрудничеству</h2>
+          <p class="section-sub" style="text-align: center;">Открыт к новым возможностям</p>
+
+          <div class="contact-cards">
+            <a href="https://t.me/Direwait" class="contact-card" target="_blank">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5L2.5 10.5L9.5 14.5L13.5 21.5L21.5 4.5Z" /><path d="M9.5 14.5L13.5 21.5L21.5 4.5L9.5 14.5Z" /><path d="M9.5 14.5L2.5 10.5L13.5 21.5L9.5 14.5Z" /><path d="M21.5 4.5L9.5 14.5" />
+                </svg>
+              </span>
+              <span class="contact-platform">Telegram</span>
+              <span class="contact-value">@Direwait</span>
+            </a>
+            <a href="mailto:borejkonikita77@gmail.com" class="contact-card" target="_blank">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7L12 13L2 7" /></svg>
+              </span>
+              <span class="contact-platform">Email</span>
+              <span class="contact-value">@gmail.com</span>
+            </a>
+            <a href="https://github.com/Direwait" class="contact-card" target="_blank">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </span>
+              <span class="contact-platform">GitHub</span>
+              <span class="contact-value">github.com/Direwait</span>
+            </a>
+          </div>
+
+          <a href="https://t.me/Direwait" class="btn btn-primary contact-cta" target="_blank">✈ Написать в Telegram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 Никита Борейко</span>
+      <span class="footer-built">Built with <span>♥</span> + Java</span>
+    </div>
+  </footer>
+  <script src="./up.js"></script>
+  <script src="./translate.js"></script>
+</body>
+</html>
